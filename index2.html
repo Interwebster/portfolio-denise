@@ -10,6 +10,11 @@
   	width: 50%;
   }
 
+  div.grid-item {
+  	display: grid;
+  	grid-template-columns: repeat(6, 1fr);
+  }
+
   div img {
   	display: block;
   	padding: 75px 30px;
@@ -20,6 +25,7 @@
   div {
   	background: white;
   	margin-bottom: 20px;
+
   }
 
   .grid {
@@ -33,6 +39,23 @@
   	color: #6B7C93;
   	font-size: .875em;
   	line-height: 1.4em;
+  }
+
+  .hor-3col {
+  	grid-column:1/5;
+  }
+
+  .L{
+  	justify-self: start;
+  }
+
+  .M {
+  	justify-self:center;
+
+  }
+
+  .R {
+  	justify-self: end;
   }
 
   @media (max-width: 400px) {
@@ -49,15 +72,15 @@
 
   <div class="grid" data-masonry='{ "itemSelector": ".grid-item"}'>
   	<div class="grid-item">
-  		<img src="rectangle-1.png">
+  		<img src="rectangle-1.png" class="hor-3col L">
   	</div>
 
   	<div class="grid-item">
-  		<img src="rectangle-3.png">
+  		<img src="rectangle-3.png" class="hor-3col M">
   <!-- 		<p>Não é possível esperar a criatividade chegar. Por isso, este infográfico vai te ajudar a conceber ideias com mais naturalidade.</p> -->
   	</div>
-  	<div class="grid-item">
-  		<img src="rectangle-2.png">
+  	<div class="grid-item" style="display: grid;">
+  		<img src="rectangle-2.png" class="hor-3col R">
   	</div>
   	<div class="grid-item">
   		<img src="rectangle-4.png">
