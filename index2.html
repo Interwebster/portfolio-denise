@@ -70,7 +70,7 @@
 
 <body>
 
-  <div class="grid" data-masonry='{ "itemSelector": ".grid-item"}'>
+  <div class="grid">
   	<div class="grid-item">
   		<img src="rectangle-1.png" class="hor-3col L">
   	</div>
@@ -124,6 +124,19 @@
   	</div>
   </div>
 
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="scripts/jquery-3.2.1.min.js"></script>
+<script src="scripts/masonry.pkgd.min.js"></script>
+<script src="scripts/imagesloaded.pkgd.min.js"></script>
+<script>
+  var $grid = $('.grid').imagesLoaded( function() {
+    // init Masonry after all images have loaded
+    $grid.masonry({
+      // options...
+      itemSelector: '.grid-item',
+      percentPosition: true
+    });
+  });
+
+</script>
 </body>
 </html>
