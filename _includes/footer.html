@@ -1,0 +1,17 @@
+<footer class="site-footer">
+
+  <script src="scripts/jquery-3.2.1.min.js"></script>
+  <script src="scripts/masonry.pkgd.min.js"></script>
+  <script src="scripts/imagesloaded.pkgd.min.js"></script>
+  <script>
+  var $grid = $('.grid').imagesLoaded( function() {
+    // init Masonry after all images have loaded
+    $grid.masonry({
+      // options...
+      itemSelector: '.grid-item',
+      percentPosition: true
+    });
+  });
+  </script>
+
+</footer>

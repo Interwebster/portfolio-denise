@@ -1,0 +1,63 @@
+
+// HOME
+
+.grid-item {
+  width: 50%;
+}
+
+div.grid-item {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+div img {
+  display: block;
+  padding: 75px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+div {
+  background: white;
+  margin-bottom: 20px;
+
+}
+
+.grid {
+  width: 100%;
+  margin: 0 auto;
+}
+
+div p {
+  padding: 10px;
+  font-family: sans-serif;
+  color: #6B7C93;
+  font-size: .875em;
+  line-height: 1.4em;
+}
+
+.hor-3col {
+  grid-column:1/5;
+}
+
+.L{
+  justify-self: start;
+}
+
+.M {
+  justify-self:center;
+
+}
+
+.R {
+  justify-self: end;
+}
+
+@media (max-width: 400px) {
+  .grid-item {
+    width: 100%;
+  }
+  div img{
+    padding: 10px 5px;
+  }
+}
