@@ -2,25 +2,37 @@
 // HOME
 
 .grid-item {
-  width: 50%;
-}
-
-div.grid-item {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-}
+  width: 50%;
 
-div img {
-  display: block;
-  padding: 75px 0;
-  width: 100%;
-  box-sizing: border-box;
-}
+  .card-content{
+    position: absolute;
 
-div {
-  background: white;
-  margin-bottom: 20px;
+    img {
+      display: block;
+      padding: 75px 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
 
+    .labels {
+  		position: absolute;
+  		bottom: 0;
+  		right: 0;
+
+      h2 {
+        font-family: "Yeseva One", serif;
+        font-size: 2rem;
+      }
+
+      h3 {
+        font-family: "Lato", sans-serif;
+        font-size: 1rem;
+        font-weight: 200;
+      }
+  	}
+  }
 }
 
 .grid {
@@ -36,22 +48,6 @@ div p {
   line-height: 1.4em;
 }
 
-.hor-3col {
-  grid-column:1/5;
-}
-
-.L{
-  justify-self: start;
-}
-
-.M {
-  justify-self:center;
-
-}
-
-.R {
-  justify-self: end;
-}
 
 @media (max-width: 400px) {
   .grid-item {

@@ -20,12 +20,6 @@
     box-sizing: border-box;
   }
 
-  div {
-  	background: white;
-  	margin-bottom: 20px;
-
-  }
-
   .grid {
     width: 100%;
     margin: 0 auto;
@@ -38,6 +32,23 @@
   	font-size: .875em;
   	line-height: 1.4em;
   }
+
+	h2 {
+		font-family: "Yeseva One", serif;
+		font-size: 2rem;
+	}
+
+	h3 {
+		font-family: "Lato", sans-serif;
+		font-size: 1rem;
+		font-weight: 200;
+	}
+
+	.labels {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
 
   /*.h5col {
   	grid-column:1/5;
