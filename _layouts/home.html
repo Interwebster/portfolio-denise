@@ -5,60 +5,8 @@ layout: default
 <div class="grid">
   {% assign sorted_pages = site.pages | sort:"priority" | reverse %}
   {% for project in sorted_pages %}
-    {% if project.width %}
+    {% if project.position %}
       {% include project_card.html %}
     {% endif %}
   {% endfor %}
-
-  <div class="grid-item">
-    <img src="rectangle-1.png" class="hor-3col L">
-  </div>
-
-  <div class="grid-item">
-    <img src="rectangle-3.png" class="hor-3col M">
-    <!-- 		<p>Não é possível esperar a criatividade chegar. Por isso, este infográfico vai te ajudar a conceber ideias com mais naturalidade.</p> -->
-  </div>
-  <div class="grid-item" style="display: grid;">
-    <img src="rectangle-2.png" class="hor-3col R">
-  </div>
-  <div class="grid-item">
-    <img src="rectangle-4.png">
-    <!-- 		<p>Não é possível esperar a criatividade chegar. Por isso, este infográfico vai te ajudar a conceber ideias com mais naturalidade.</p> -->
-  </div>
-  <div class="grid-item">
-    <img src="rectangle-1.png">
-  </div>
-  <div class="grid-item">
-    <img src="rectangle-2.png">
-  </div>
-
-  <div class="grid-item">
-    <img src="rectangle-3.png">
-    <!-- 		<p>Não é possível esperar a criatividade chegar. Por isso, este infográfico vai te ajudar a conceber ideias com mais naturalidade.</p> -->
-  </div>
-
-  <div class="grid-item">
-    <img src="rectangle-4.png">
-    <!-- 		<p>Não é possível esperar a criatividade chegar. Por isso, este infográfico vai te ajudar a conceber ideias com mais naturalidade.</p> -->
-  </div>
-  <div class="grid-item">
-    <img src="https://ak.picdn.net/assets/cms/97e1dd3f8a3ecb81356fe754a1a113f31b6dbfd4-stock-photo-photo-of-a-common-kingfisher-alcedo-atthis-adult-male-perched-on-a-lichen-covered-branch-107647640.jpg">
-  </div>
-  <div class="grid-item">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64626/j-2.jpg">
-  </div>
-  <div class="grid-item">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64626/j-3.jpg">
-    <!-- 		<p>Não é possível esperar a criatividade chegar. Por isso, este infográfico vai te ajudar a conceber ideias com mais naturalidade.</p> -->
-  </div>
-  <div class="grid-item">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64626/j-4.jpg">
-  </div>
-  <div class="grid-item">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64626/j-5.jpg">
-  </div>
-  <div class="grid-item">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64626/j-6.jpg">
-    <!-- 		<p>Não é possível esperar a criatividade chegar. Por isso, este infográfico vai te ajudar a conceber ideias com mais naturalidade.</p> -->
-  </div>
 </div>
